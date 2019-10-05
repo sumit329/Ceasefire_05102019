@@ -1,0 +1,140 @@
+﻿
+#hamburgar {
+    display: block;
+}
+
+.minimizer {
+    max-width: 6rem !important;
+    min-width: 4rem !important;
+}
+
+.maximize {
+    width: 92% !important;
+}
+
+.main-panel > .content {
+    margin-top: 3.749rem !important;
+}
+
+.card .card-body .form-group {
+    margin: 0px 0 0 !important;
+}
+
+h3, .h3 {
+    font-size: 1.363rem !important;
+    line-height: 1em !important;
+    margin: 0 !important;
+}
+
+.form-group {
+    padding-bottom: 0px !important;
+}
+
+    .form-group .bmd-label-static {
+        top: -18px;
+    }
+
+.bmd-form-group .bmd-label-static {
+    font-size: 0.895rem;
+}
+
+.bmd-form-group label {
+    color: #626262;
+}
+
+.white {
+    /*color: #fff !important;*/
+    border-color: #fff !important;
+}
+
+.form-control {
+    border-radius: 0.229rem;
+}
+
+.form-check {
+    margin-bottom: 0.9rem;
+}
+
+label {
+    font-size: 0.895rem;
+    color: #626262;
+    padding-left: 3px;
+}
+
+input, input[type="text"], input[type="password"], textarea {
+    /*padding-left: 0.239rem !important;*/
+    border: 1px solid #aaa !important;
+}
+
+    input[type="text"]:focus, input[type="checkbox"]:focus, input[type="file"]:focus, input[type="password"]:focus, input[type="radio"]:focus, textarea:focus, select:focus {
+        background-color: #fff !important;
+        border: 2px solid rgb(165, 222, 247) !important;
+        box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 188, 212, 0.4);
+    }
+
+    input[type="text"]:hover, input[type="checkbox"]:hover, input[type="file"]:hover, input[type="password"]:hover, input[type="radio"]:hover, textarea:hover, select:hover {
+        /*background-color:#fff !important;*/
+        border: 2px solid rgb(165, 222, 247) !important;
+        box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 188, 212, 0.4);
+    }
+
+select {
+    border: 1px solid #aaa !important;
+}
+
+    select.form-control:not([size]):not([multiple]) {
+        height: 36px;
+    }
+
+    select, select.form-control {
+        -moz-appearance: menulist;
+        -webkit-appearance: menulist;
+    }
+
+.row .bg-info {
+    border-radius: 0.239rem;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 3px 3px !important;
+}
+
+table > tbody > tr > td > a {
+    padding: 1px 10px !important;
+    min-width: 3.239rem !important;
+}
+
+.card {
+    font-size: 0.879rem !important;
+}
+
+.btn {
+    min-width: 3rem;
+    max-width: 9rem;
+}
+.sidebar[data-color="azure"] li.active >[data-toggle="collapse"] {
+    background-color: #00bcd4 !important;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 188, 212, 0.4) !important;
+}
+.sidebar[data-color="orange"] li.active >[data-toggle="collapse"] {
+    background-color: darkorange !important;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 188, 212, 0.4) !important;
+}
+.sidebar[data-color="green"] li.active >[data-toggle="collapse"] {
+    background-color: green !important;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 188, 212, 0.4) !important;
+}
+.sidebar[data-color="danger"] li.active >[data-toggle="collapse"] {
+    background-color: #e73e3b !important;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 188, 212, 0.4) !important;
+}
+.sidebar .nav li.active > [data-toggle="collapse"] i {
+
+    color: #fff !important;
+
+}
+.sidebar .nav li.active > [data-toggle="collapse"] p {
+
+    color: #fff !important;
+
+}

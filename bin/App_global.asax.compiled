@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="8" virtualPath="/CeasefireMD/global.asax" hash="ffffffffe15abebf" filehash="23a3424818ba" flags="150000" assembly="App_global.asax" type="ASP.global_asax">
+    <filedeps>
+        <filedep name="/CeasefireMD/global.asax" />
+    </filedeps>
+</preserve>

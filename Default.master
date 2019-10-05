@@ -1,0 +1,128 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPage, App_Web_r5z31h4q" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <title>Cease Fire</title>
+    <link href="images/logo/CeaseFireLogo.jpg" rel="shortcut icon" type="image/x-icon" />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+    <link href="/assets/css/CATStyle.css" rel="stylesheet" />
+    <link href="/assets/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
+    <link href="/assets/css/Style.css" rel="stylesheet" />
+    <%-- DataTable Style--%>
+    <link href="assets/js/DataTable/datatables.min.css" rel="stylesheet" />
+    <link href="assets/js/DataTable/Buttons-1.5.6/css/buttons.bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/js/DataTable/DataTables-1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+    <!--   Core JS Files   -->
+    <script type="text/javascript" src="/assets/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/core/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/core/popper.min.js"></script>
+    <script type="text/javascript" src="/assets/js/core/bootstrap-material-design.min.js"></script>
+    <script type="text/javascript" src="/Javascript/EnterKeyEvents.js"></script>
+    <script type="text/javascript" src="/Javascript/AutoCompleteHelper.js"></script>
+    <%-- DataTable JS--%>
+    <script src="assets/js/DataTable/datatables.min.js"></script>
+    <script src="assets/js/DataTable/Buttons-1.5.6/js/buttons.bootstrap.min.js"></script>
+    <script src="assets/js/DataTable/DataTables-1.10.18/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/js/DataTable/JSZip-2.5.0/jszip.min.js"></script>
+    <script src="assets/js/DataTable/pdfmake-0.1.36/pdfmake.min.js"></script>
+    <script src="assets/js/DataTable/pdfmake-0.1.36/vfs_fonts.js"></script>
+    
+    <script type="text/javascript" src="assets/js/CATScript.js"></script>
+
+    <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+    <script type="text/javascript" src="/assets/js/material-dashboard.js?v=2.1.1"></script>
+    <script type="text/javascript" src="/assets/js/plugins/chartist.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+        function TableStyle() {
+            if ($("#ctl00_ContentPlaceHolder1_grdMasterView").find()) {
+                $("#ctl00_ContentPlaceHolder1_grdMasterView").prepend($("<thead></thead>").append($("#ctl00_ContentPlaceHolder1_grdMasterView").find("tr:first"))).dataTable();
+                //$("#ctl00_ContentPlaceHolder1_grdMasterView").append($("<tfoot></tfoot>").prepend($("#ctl00_ContentPlaceHolder1_grdMasterView").find("tr:first").clone())).dataTable();
+
+                // DataTable
+                var table = $("#ctl00_ContentPlaceHolder1_grdMasterView").DataTable();
+
+                $("#ctl00_ContentPlaceHolder1_grdMasterView tfoot th").each(function () {
+                    var title = $(this).text();
+                    $(this).html('<input type="text" placeholder="Search ' + title + '" />');
+                });
+
+                // Apply the search
+                table.columns().every(function () {
+                    var that = $("#ctl00_ContentPlaceHolder1_grdMasterView").DataTable();
+
+                    $('input', this.footer()).on('keyup change', function () {
+                        if (that.search() !== this.value) {
+                            that
+                                .search(this.value)
+                                .draw();
+                        }
+                    });
+                });
+                /*DataTable Search*/
+
+                table.destroy();
+                $("#ctl00_ContentPlaceHolder1_grdMasterView").DataTable({
+                    dom: 'Bfltip',
+                    retrieve: true,
+                    buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+                });
+                $("#ctl00_ContentPlaceHolder1_divDetail").prepend("<div id='tblrow' class='row'>");
+                $("#tblrow").append($("#ctl00_ContentPlaceHolder1_grdMasterView_length").addClass("col-md-2"))
+                            .append($("#ctl00_ContentPlaceHolder1_grdMasterView_filter").addClass("col-md-2"))
+                            .prepend($(".dt-buttons").addClass("col-md-7"));
+                $(".buttons-print").addClass("buttons-html5");
+                $(".buttons-html5").addClass("h-50");
+            }
+            return;
+        };
+    </script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="">
+    <div id="wrapper">
+        <form id="form1" runat="server">
+            <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true" AsyncPostBackTimeout="0"
+                EnablePageMethods="true">
+            </asp:ScriptManager>
+            <!-- left navigation -->
+            <LeftMenu:LeftMenu ID="LeftMenu1" runat="server" />
+            <!-- left navigation -->
+            <div class="main-panel">
+                <div class="logo d-none">
+                    <a class="simple-text logo-normal">
+                        <img id="ImgCompanyLogo" runat="server" alt="logo" style="width: 5rem;" />
+                    </a>
+                </div>
+                <!-- top navigation -->
+                <LogInfo:LogInfo ID="login" runat="server" />
+                <!-- /top navigation -->
+                <div class="content">
+                    <div class="container-fluid">
+                        <%--   <asp:ScriptManager ID="ScriptManager1" runat="server" >
+                        </asp:ScriptManager>--%>
+
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                        <%--<Footer:Footer ID="footer" runat="server" />--%>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

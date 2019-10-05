@@ -1,0 +1,49 @@
+﻿
+.success, .error {
+    border: 1px solid;
+    margin: 3px 0px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+.success {
+    color: #000000;
+    background-color: Cyan;
+    background-image:url('~/Images/success.png');
+    height:32px;
+    padding:2px 0px 3px 0px;
+    vertical-align:middle;
+    
+}
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('~/Images/error.png');
+    height:32px;
+    padding:2px 0px 3px 0px;
+    vertical-align:middle;
+}
+.container
+{
+}
+.success p,.error p {
+    padding: 0px 50px;
+}
+.success a, .error a {
+    float: right;
+    padding: 10px;
+    cursor:pointer;
+}
+.container img {
+    border: none;
+}
+
+/* validation */
+.validation {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('~/Images/error.png');
+}
+.validation ul
+{
+	padding: 0px 30px;
+}

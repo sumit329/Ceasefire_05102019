@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="C:\Users\Prakash\AppData\Local\Temp\tmpAA6.tmp.cadir\bin\App_Web_3v0nkstx.dll">
+   <Modules>
+    <Module Name="app_web_3v0nkstx.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="FMS_Request" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnSend_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-07-13 19:34:55Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="f:\Self Software\Software 2015\Application\CeasefireMD\FMS" File="Request.aspx.cs" Line="113">Object 'reader' can be disposed more than once in method 'FMS_Request.btnSend_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 113</Issue>
+             <Issue Certainty="75" Level="Warning" Path="f:\Self Software\Software 2015\Application\CeasefireMD\FMS" File="Request.aspx.cs" Line="96">Object 'stream' can be disposed more than once in method 'FMS_Request.btnSend_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 96, 112, 113</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Prakash\AppData\Local\Temp\tmpAA6.tmp.cadir\bin\App_Web_g4hb1e3n.dll">
+   <Modules>
+    <Module Name="app_web_g4hb1e3n.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="API_APIUpdate" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnBranchMaster_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-07-13 19:34:55Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="f:\Self Software\Software 2015\Application\CeasefireMD\API" File="APIUpdate.aspx.cs" Line="228">Object 'stream' can be disposed more than once in method 'API_APIUpdate.btnBranchMaster_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 228</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnCityMaster_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-07-13 19:34:55Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="f:\Self Software\Software 2015\Application\CeasefireMD\API" File="APIUpdate.aspx.cs" Line="428">Object 'stream' can be disposed more than once in method 'API_APIUpdate.btnCityMaster_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 428</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnItemMaster_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-07-13 19:34:55Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="f:\Self Software\Software 2015\Application\CeasefireMD\API" File="APIUpdate.aspx.cs" Line="295">Object 'stream' can be disposed more than once in method 'API_APIUpdate.btnItemMaster_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 295</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnSaveBranchMaster_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-07-13 19:34:55Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="f:\Self Software\Software 2015\Application\CeasefireMD\API" File="APIUpdate.aspx.cs" Line="262">Object 'stream' can be disposed more than once in method 'API_APIUpdate.btnSaveBranchMaster_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 262</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnSaveCityMaster_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-07-13 19:34:55Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="f:\Self Software\Software 2015\Application\CeasefireMD\API" File="APIUpdate.aspx.cs" Line="462">Object 'stream' can be disposed more than once in method 'API_APIUpdate.btnSaveCityMaster_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 462</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnSaveItemMaster_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-07-13 19:34:55Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="f:\Self Software\Software 2015\Application\CeasefireMD\API" File="APIUpdate.aspx.cs" Line="329">Object 'stream' can be disposed more than once in method 'API_APIUpdate.btnSaveItemMaster_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 329</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnSaveStateMaster_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-07-13 19:34:55Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="f:\Self Software\Software 2015\Application\CeasefireMD\API" File="APIUpdate.aspx.cs" Line="395">Object 'stream' can be disposed more than once in method 'API_APIUpdate.btnSaveStateMaster_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 395</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnSaveVendorMaster_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-07-13 19:34:55Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="f:\Self Software\Software 2015\Application\CeasefireMD\API" File="APIUpdate.aspx.cs" Line="195">Object 'stream' can be disposed more than once in method 'API_APIUpdate.btnSaveVendorMaster_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 195</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnStateMaster_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-07-13 19:34:55Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="f:\Self Software\Software 2015\Application\CeasefireMD\API" File="APIUpdate.aspx.cs" Line="362">Object 'stream' can be disposed more than once in method 'API_APIUpdate.btnStateMaster_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 362</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnVendorMaster_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-07-13 19:34:55Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="f:\Self Software\Software 2015\Application\CeasefireMD\API" File="APIUpdate.aspx.cs" Line="162">Object 'stream' can be disposed more than once in method 'API_APIUpdate.btnVendorMaster_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 162</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Prakash\AppData\Local\Temp\tmpAA6.tmp.cadir\bin\App_Web_y51v4elp.dll">
+   <Modules>
+    <Module Name="app_web_y51v4elp.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Login" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnLogin_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-07-13 19:34:55Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="f:\Self Software\Software 2015\Application\CeasefireMD" File="Login.aspx.cs" Line="60">Object 'stream' can be disposed more than once in method 'Login.btnLogin_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 60</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>Do not dispose objects multiple times</Name>
+   <Description>A correctly implemented Dispose method can be called multiple times without throwing an exception. However, this is not guaranteed and to avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.</Description>
+   <Resolution Name="Default">Object {0} can be disposed more than once in method {1}. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 60</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

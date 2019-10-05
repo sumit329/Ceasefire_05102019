@@ -1,0 +1,157 @@
+﻿.grid-view
+{
+   padding:0;
+   margin: 0; 
+   font-family: Verdana, Arial, Helvetica, sans-serif, Trebuchet MS;
+   font-size: 12px;
+   background-color:Black;
+}
+
+
+.grid-view tr.header
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif, Trebuchet MS;
+   font-size: 9px;
+	background-repeat:repeat-x;
+	vertical-align:middle;
+	color:Black;
+	text-align:left;
+	background-color:#ADD8E6;/*3c454f */
+	min-height:30px;
+}
+
+.header_30
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif, Trebuchet MS;
+    font-size: 11px;
+	background-repeat:repeat-x;
+	vertical-align:middle;
+	color:#ffffff;
+	text-align:left;
+	background-color:#1b5289;
+	min-height:28px;
+	line-height:28px;
+	max-height:28px;	
+}
+
+
+
+.grid-view tr.normal
+{
+   color: black;
+   vertical-align: middle;
+   text-align: left;
+   background-color:White;
+   font-family: Verdana, Arial, Helvetica, sans-serif, Trebuchet MS;
+   font-size: 9px;
+   font-weight:normal;
+}
+
+.grid-view tr.alternate
+{
+   color: black; 
+   vertical-align: middle;
+   text-align: left;
+   background-color:#F4F3F2;
+   font-family: Verdana, Arial, Helvetica, sans-serif, Trebuchet MS;
+   font-size: 9px;
+   font-weight:normal;
+}
+
+.pagerstyle
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif, Trebuchet MS;
+    font-size: 12px; 
+	vertical-align:middle;
+	color:Black;
+	text-align:left;
+	background-color:#387995;
+	font-weight:normal;
+	padding-left: 5px;
+  
+}
+
+.pagerstyle table
+{
+  margin: 0 auto 0 auto;
+ float: left;
+}
+
+.pagerstyle a:link
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif, Trebuchet MS;
+    font-size: 11px;
+	vertical-align:middle;
+	color:white;
+	text-align:center;
+	font-weight:bold;
+	  margin-left:5px;
+                margin-right:5px;
+}
+
+.pagerstyle a:visited 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif, Trebuchet MS;
+    font-size: 11px;
+	vertical-align:middle;
+	color:Blue;
+
+	text-align:center;
+	font-weight:bold;
+}
+.pagerstyle a:hover  
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif, Trebuchet MS;
+    font-size: 15px;
+	vertical-align:middle;
+	color:White;
+	
+	text-align:center;
+	font-weight:bold;
+}
+
+.pagerstyle a:active   
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif, Trebuchet MS;
+    font-size: 15px;
+	vertical-align:middle;
+	color:Black;
+	font-weight:bold;
+
+	text-align:center;
+}
+
+.header a:link
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif, Trebuchet MS;
+   font-size: 9px;
+	background-repeat:repeat-x;
+	vertical-align:middle;
+	color:White;
+	text-align:left;
+	background-color:#000000;
+	
+}
+.right
+{
+float:right;
+
+}
+.left
+{
+float:left;
+
+}
+.emptyrowstyle
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif, Trebuchet MS;
+    font-size: 11px;
+	background-repeat:repeat-x;
+	vertical-align:middle;
+	color:white;
+	text-align:center;
+	font-weight:bold;
+	background-color:#387995;
+	
+}
+
